@@ -1,0 +1,702 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"da",
+				"date"
+			],
+			[
+				"Dis",
+				"DISTINCT"
+			],
+			[
+				"B",
+				"battle"
+			],
+			[
+				"S",
+				"SELECT"
+			],
+			[
+				"Pro",
+				"Product"
+			],
+			[
+				"IN",
+				"INSERT"
+			],
+			[
+				"F",
+				"FROM"
+			],
+			[
+				"Pr",
+				"Printer"
+			],
+			[
+				"rec_",
+				"rec_buf_i"
+			],
+			[
+				"new",
+				"newIArr"
+			],
+			[
+				"ne",
+				"newReArr"
+			],
+			[
+				"newR",
+				"newReArr"
+			],
+			[
+				"si",
+				"sizeof"
+			],
+			[
+				"se",
+				"sendcounts"
+			],
+			[
+				"re",
+				"rec_buf_pi"
+			],
+			[
+				"d",
+				"displs"
+			],
+			[
+				"s",
+				"sendCounts"
+			],
+			[
+				"ge",
+				"getSendCountsAndDisplacements"
+			],
+			[
+				"mat",
+				"matrixSize"
+			],
+			[
+				"ma",
+				"matrixSize"
+			],
+			[
+				"siz",
+				"size_node_matrix"
+			],
+			[
+				"ran",
+				"my_rank"
+			],
+			[
+				"de",
+				"define"
+			],
+			[
+				"m",
+				"my_rank"
+			],
+			[
+				"co",
+				"comm_sz"
+			],
+			[
+				"tm",
+				"tmp_number_length"
+			],
+			[
+				"fo",
+				"formated_number"
+			],
+			[
+				"for",
+				"for\tFor Loop"
+			],
+			[
+				"n",
+				"nb_comma_added"
+			],
+			[
+				"tmp",
+				"tmp_number"
+			],
+			[
+				"arr",
+				"array_size"
+			],
+			[
+				"f",
+				"formated_number"
+			],
+			[
+				"bina",
+				"binary"
+			],
+			[
+				"form",
+				"formated_binary"
+			],
+			[
+				"size",
+				"sizeof"
+			],
+			[
+				"b",
+				"binary"
+			],
+			[
+				"to",
+				"toNumber"
+			],
+			[
+				"ca",
+				"category_name"
+			],
+			[
+				"compa",
+				"company_id"
+			],
+			[
+				"el",
+				"elements_per_proc"
+			],
+			[
+				"i",
+				"inc\t#include <…>"
+			],
+			[
+				"pr",
+				"printBuffer2"
+			],
+			[
+				"st",
+				"stack"
+			],
+			[
+				"nex",
+				"nextChar"
+			],
+			[
+				"in",
+				"indexBuffer"
+			],
+			[
+				"rec",
+				"rec_buf"
+			],
+			[
+				"p",
+				"printMatrix"
+			],
+			[
+				"inc",
+				"include"
+			],
+			[
+				"newI",
+				"newIArr"
+			],
+			[
+				"prin",
+				"printRank"
+			],
+			[
+				"han",
+				"handRank"
+			],
+			[
+				"init",
+				"initialRank"
+			],
+			[
+				"ini",
+				"initialRank"
+			],
+			[
+				"Ini",
+				"initialHandRank"
+			],
+			[
+				"print",
+				"printf\tprintf …"
+			],
+			[
+				"dec",
+				"deckRank"
+			],
+			[
+				"RANK",
+				"RANK_LIST"
+			],
+			[
+				"pai",
+				"pairsFound"
+			],
+			[
+				"t",
+				"twoFound"
+			],
+			[
+				"te",
+				"threeFound"
+			],
+			[
+				"two",
+				"twoFound"
+			],
+			[
+				"is",
+				"isStraight"
+			],
+			[
+				"an",
+				"analyseHand"
+			],
+			[
+				"index",
+				"indexOf"
+			],
+			[
+				"Han",
+				"HAND_SIZE"
+			],
+			[
+				"ra",
+				"rankCount"
+			],
+			[
+				"R",
+				"RANK_COUNT"
+			],
+			[
+				"r",
+				"rank"
+			],
+			[
+				"hand",
+				"handRank"
+			],
+			[
+				"H",
+				"HAND_SIZE"
+			],
+			[
+				"v",
+				"validCard"
+			],
+			[
+				"c",
+				"currentCard"
+			],
+			[
+				"do",
+				"doCrossover"
+			],
+			[
+				"err",
+				"error"
+			],
+			[
+				"nb",
+				"new_number"
+			],
+			[
+				"ar",
+				"argsPosition"
+			],
+			[
+				"ch",
+				"charState"
+			],
+			[
+				"x_",
+				"x_right"
+			],
+			[
+				"cu",
+				"currentWordLenght"
+			],
+			[
+				"fun",
+				"function"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Haskell/Haskell.sublime-build",
+					""
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Haskell/Haskell.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "pack",
+		"selected_items":
+		[
+			[
+				"pack",
+				"Preferences: Package Control Settings – Default"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"erplr",
+				"SublimeREPL: Racket"
+			],
+			[
+				"Package",
+				"Package Control: Remove Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/cesar_jeanroy/laravel-projects/AssETS"
+	],
+	"file_history":
+	[
+		"/Users/cesar_jeanroy/Documents/Docker_node/package.json",
+		"/Users/cesar_jeanroy/Documents/Docker_node/app.js",
+		"/Users/cesar_jeanroy/Documents/Docker_node/package.js",
+		"/Users/cesar_jeanroy/Documents/Docker_node/packages.js",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New_Mexico/classes/CS464_Databases/project/Project3/WithIndex/query.sql",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New_Mexico/classes/CS464_Databases/project/server/categories.php",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New_Mexico/classes/CS464_Databases/git/homework/3/homework3.sql",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New_Mexico/classes/CS464_Databases/git/classwork/Ships.sql",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New_Mexico/classes/CS464_Databases/git/classwork/myQueries.sql",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New_Mexico/classes/CS464_Databases/git/classwork/AdditionalQuery.txt",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New_Mexico/classes/CS464_Databases/git/classwork/ShipQuery.sql",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New_Mexico/classes/CS464_Databases/git/homework/3/homework3_database.sql",
+		"/Users/cesar_jeanroy/Documents/DockerFiles/mysql-docker/homework3.sql",
+		"/Users/cesar_jeanroy/Library/Application Support/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New_Mexico/classes/CS464_Databases/project/database/schema.sql",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New_Mexico/classes/CS442_Parallele-programming/projects/project_1/code/mpi_tests/mpi_matrix_update.c",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New_Mexico/classes/CS442_Parallele-programming/projects/project_1/code/weak_scaling_test.cmd",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New_Mexico/classes/CS442_Parallele-programming/projects/project_1/code/fractal.c",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New_Mexico/classes/CS442_Parallele-programming/projects/project_1/code/strong_scaling_test.cmd",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New_Mexico/classes/CS442_Parallele-programming/projects/project_1/code/fractale.c",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New_Mexico/classes/CS442_Parallele-programming/projects/project_1/code/week_scaling_test.cmd",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New_Mexico/classes/CS241_Data-Organization/Labs/lab-6/binary.c",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New_Mexico/classes/CS367_Declartive-programming/git/Homework/4/hw4.test.reference.output",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New_Mexico/classes/CS367_Declartive-programming/git/Homework/4/hw4.test.cases",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New_Mexico/classes/CS367_Declartive-programming/git/Homework/4/hw4-definitions.hs",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New_Mexico/classes/CS367_Declartive-programming/git/Homework/4/hw4.test.my.output",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New_Mexico/classes/CS241_Data-Organization/Labs/lab-6/main.c",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New_Mexico/classes/CS367_Declartive-programming/git/Homework/4/test.hs",
+		"/Users/cesar_jeanroy/Downloads/demographics.sql",
+		"/Users/cesar_jeanroy/Downloads/Tablescript_new.sql",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New_Mexico/classes/CS241_Data-Organization/Labs/lab-5/test/postfix.in",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New_Mexico/classes/CS241_Data-Organization/Labs/lab-5/getop.c",
+		"/Users/cesar_jeanroy/Downloads/mpi/mpi_hello.c",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New_Mexico/classes/CS442_Parallele-programming/exam/mpi.c",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New_Mexico/classes/CS442_Parallele-programming/exam/Problem-2.txt",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New_Mexico/classes/CS442_Parallele-programming/exam/Problem1-b.txt",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New_Mexico/classes/CS442_Parallele-programming/exam/Problem-4.txt",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New_Mexico/classes/CS442_Parallele-programming/exam/Problem-3.txt",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New_Mexico/classes/CS442_Parallele-programming/exam/Problem-1e.txt",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New_Mexico/classes/CS442_Parallele-programming/exam/Problem-1d.txt",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New_Mexico/classes/CS442_Parallele-programming/exam/Problem-1c.txt",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New_Mexico/classes/CS442_Parallele-programming/exam/Problem-1a.txt",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New Mexico/classes/CS241_Data-Organization/Labs/projects/1/code/sort.c",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New Mexico/classes/CS241_Data-Organization/Labs/projects/1/code/a.out",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New Mexico/classes/CS241_Data-Organization/Labs/projects/1/code/test/poker.in",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New Mexico/classes/CS442_Parallele-programming/projects/project_1/code/fractale.c",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New Mexico/classes/CS241_Data-Organization/Labs/projects/1/code/constants.h",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New Mexico/classes/CS442_Parallele-programming/projects/project_1/README.md",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New Mexico/classes/CS442_Parallele-programming/projects/project_1/code/README.md",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New Mexico/classes/CS241_Data-Organization/Labs/projects/1/code/main.c",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New Mexico/classes/CS241_Data-Organization/Labs/projects/1/code/inputReader.c",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New Mexico/classes/CS442_Parallele-programming/projects/project_1/test/fractale2.c",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New Mexico/classes/CS442_Parallele-programming/projects/project_1/code/geomandel/src/fractalcruncher.cpp",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New Mexico/classes/CS442_Parallele-programming/projects/project_1/code/geomandel/src/fractalcrunchmulti.cpp",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New Mexico/classes/CS442_Parallele-programming/projects/project_1/code/geomandel/src/fractalzoom.cpp",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New Mexico/classes/CS442_Parallele-programming/projects/project_1/code/geomandel/src/fractalcrunchsingle.cpp",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New Mexico/classes/CS442_Parallele-programming/projects/project_1/test/fractale.c",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New Mexico/classes/CS442_Parallele-programming/projects/project_1/code/quickcg.h",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New Mexico/classes/CS442_Parallele-programming/projects/project_1/code/quickcg.cpp",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New Mexico/classes/CS442_Parallele-programming/projects/project_1/code/Makefile",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New Mexico/classes/CS442_Parallele-programming/projects/project_1/code/main.cpp",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New Mexico/classes/CS442_Parallele-programming/projects/project_1/code/imageFilter.cpp",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New Mexico/classes/CS367_Declartive-programming/git/Homework/2/homework2.scm",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New Mexico/classes/CS241_Data-Organization/Labs/lab-3/crossover.in",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New Mexico/classes/CS367_Declartive-programming/Homework/1/files/exos+examples-book.rkt",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New Mexico/classes/CS241_Data-Organization/Labs/lab-2/test.c",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New Mexico/classes/CS241_Data-Organization/Labs/Lab1/asciiArt.c",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New Mexico/classes/CS367_Declartive-programming/Homework/1/final/homework1_Cesar-Jeanroy.rkt",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New Mexico/classes/CS367_Declartive-programming/Homework/1/files/second.scm",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New Mexico/classes/CS241_Data-Organization/Labs/lab-2/lineSum.in",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New Mexico/classes/CS241_Data-Organization/Labs/lab-3/crossover.out",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New Mexico/classes/CS241_Data-Organization/Labs/lab-3/test.c",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New Mexico/classes/CS241_Data-Organization/Labs/lab-2/lab-2.c",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New Mexico/classes/CS241_Data-Organization/Labs/lab-3/lab-3.c",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New Mexico/classes/CS241_Data-Organization/Labs/lab-3/bitwiseCrossover.c",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New Mexico/classes/CS 367 Declartive programming/test2.rkt",
+		"/Users/cesar_jeanroy/Library/Application Support/Sublime Text 3/Packages/User/SublimeREPL.sublime-settings",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New Mexico/classes/CS 241 Data Organization/Labs/Lab1/asciiArt.c",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New Mexico/classes/CS 367 Declartive programming/test.rkt",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New Mexico/classes/CS 367/test.scm",
+		"/Users/cesar_jeanroy/Google_Drive/ETS/New Mexico/classes/CS 367/test.rtk",
+		"/Users/cesar_jeanroy/Google_Drive/Workspace WEB/StravaPhotoApp/config/application.rb",
+		"/Users/cesar_jeanroy/Google_Drive/Workspace WEB/StravaPhotoApp/Gemfile",
+		"/Users/cesar_jeanroy/Google_Drive/Workspace WEB/StravaPhotoApp/README.md",
+		"/Users/cesar_jeanroy/Google_Drive/Workspace WEB/StravaPhotoApp/lib/Strava/Api.rb\nApi.rb",
+		"/Users/cesar_jeanroy/Google_Drive/Workspace WEB/StravaPhotoApp/app/assets/stylesheets/application.sass",
+		"/Users/cesar_jeanroy/Google_Drive/Workspace WEB/StravaPhotoApp/app/views/layouts/application.html.haml",
+		"/Users/cesar_jeanroy/Google_Drive/Workspace WEB/StravaPhotoApp/config/secrets.yml",
+		"/Users/cesar_jeanroy/Google_Drive/Workspace WEB/StravaPhotoApp/config/environments/development.rb",
+		"/Users/cesar_jeanroy/Google_Drive/Workspace WEB/StravaPhotoApp/app/assets/stylesheets/application.scss",
+		"/Users/cesar_jeanroy/Google_Drive/Workspace WEB/StravaPhotoApp/app/assets/stylesheets/application.css",
+		"/Users/cesar_jeanroy/Google_Drive/Workspace WEB/cesar3030.github.io/strava.html",
+		"/Users/cesar_jeanroy/Google_Drive/Workspace WEB/cesar3030.github.io/index.html",
+		"/Users/cesar_jeanroy/Google Drive/Intellij-workspace/Parser/snmptrap_files/trap_252.log",
+		"/Users/cesar_jeanroy/Documents/DockerFiles/mysql-docker/eod.sql",
+		"/Users/cesar_jeanroy/Documents/DockerFiles/mysql-docker/test.sql",
+		"/Users/cesar_jeanroy/Downloads/parser_2016-05-26/snmptraps.log",
+		"/Users/cesar_jeanroy/Downloads/parser_2016-05-26/snmptraps.log.11",
+		"/Users/cesar_jeanroy/Documents/DockerFiles/mysql-docker/Help.txt"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"HEIGHT",
+			"WIDTH",
+			"matrixSize",
+			"tmp_mat",
+			"tmp",
+			"240000",
+			"lu",
+			"free",
+			"datetime",
+			"contry",
+			"hd_address",
+			"(name, hdAddress, dateOfCreation, contry)",
+			", REFERENCES",
+			"TABLE",
+			"table",
+			"create",
+			"not null",
+			"default",
+			"primary key",
+			"street",
+			"metr",
+			"getPopAndError(pop1, pop2, error);",
+			"stat",
+			"rec_buf",
+			"if (0 == rank) {\n        for (int i = 0; i < size; i++) {\n            printf(\"sendcounts[%d] = %d\\tdispls[%d] = %d\\n\", i, sendcounts[i], i, displs[i]);\n        }\n    }",
+			"ini",
+			"initialRankCount",
+			"initialHandRank",
+			"generateInitialHandInfo",
+			"initialRankCount[",
+			"initialRankCount\\[(*)\\] =",
+			"initialRankCount[*] =",
+			"initialRankCount[i] =",
+			"rankCount[indexOfRank(handRank[i])]++",
+			"indexOfRank",
+			"indexOf",
+			"printHandRank",
+			"Error",
+			"'2016-07-06'",
+			"'2016-07-05'",
+			"MIB:",
+			"MIB",
+			"'2016-07-04'",
+			"'2016-07-03'",
+			"'2016-07-02'",
+			"252)",
+			"252",
+			"WSPDACMSQL01",
+			"2016-07-22 11:25:07"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"matrixSize",
+			"timestamp",
+			"country",
+			"hq_address",
+			"company_name, hd_address, date_creation, contry",
+			"(company_name, hd_address, date_creation, contry)",
+			" REFERENCES",
+			"TABLE IF NOT EXISTS",
+			"TABLE",
+			"CREATE",
+			"NOT NULL",
+			"DEFAULT",
+			"PRIMARY KEY",
+			"pop1 = pop(); \n  pop2 = pop();\n  error = pop1.error + pop2.error;",
+			"reception_buffer",
+			"indexOfRank",
+			"'2016-07-07'",
+			"'2016-07-06'",
+			"'2016-07-05'",
+			"'2016-07-04'",
+			"'2016-07-03'"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sublime_haskell_error_panel":
+	{
+		"height": 100.0
+	},
+	"output.sublime_haskell_output_panel":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "assets.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 247.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 311.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
