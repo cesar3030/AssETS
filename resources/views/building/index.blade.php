@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <div class="row">
-        <div class="col-md-8 col-md-offset-2">
+        <div class="col-md-10 col-md-offset-1">
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <div class="row">
@@ -21,7 +21,7 @@
                         <tr>
                             <th>Nom</th>
                             <th>Adresse</th>
-                            <th>Supprimer</th>
+                            <th>Opérations</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -31,8 +31,9 @@
                             <td>{{ $building->address }}</td>
                             <td>
                                 {!! Form::open(['url' => '/building/'.$building->id, 'method' => 'delete']) !!}
-                                {!! Form::submit('Supprimer', ['class' => 'btn btn-primary']) !!}
+                                {!! Form::submit('Supprimer', ['class' => 'btn btn-danger pull-right']) !!}
                                 {!! Form::close() !!}
+                                <a href="{{ route('building.edit', $building) }}" class="btn btn-primary">Modifier</a>
                             </td>
                         </tr>
                         @endforeach
