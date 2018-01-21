@@ -85,6 +85,7 @@ class BuildingController extends Controller
      */
     public function destroy(Building $building)
     {
-        //
+        $building->delete();
+        return redirect()->route('building.index');
     }
 }
