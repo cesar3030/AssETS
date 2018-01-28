@@ -26,4 +26,12 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    /**
+     * The buildings that belong to the shop.
+     */
+    public function buildings()
+    {
+        return $this->belongsToMany('App\Building');
+    }
 }
