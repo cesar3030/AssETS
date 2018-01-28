@@ -17,10 +17,18 @@ class Building extends Model
     protected $dates = ['deleted_at'];
 
     /**
-     * The users that belong to the shop.
+     * The users that manage the building.
      */
     public function users()
     {
         return $this->belongsToMany('App\User');
+    }
+
+    /**
+     * Get the floors for the building.
+     */
+    public function floors()
+    {
+        return $this->hasMany('App\Floor');
     }
 }

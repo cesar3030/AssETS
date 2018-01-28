@@ -6,13 +6,13 @@ Breadcrumbs::register('building', function ($breadcrumbs, $building) {
 });
 
 // Floor
-Breadcrumbs::register('floor', function ($breadcrumbs, $floor) {
-    $breadcrumbs->parent('building', $floor->$building);
-    $breadcrumbs->push($floor->name, route('floor.show', $floor));
+Breadcrumbs::register('floor', function ($breadcrumbs, $building, $floor) {
+    $breadcrumbs->parent('building', $building);
+    $breadcrumbs->push($floor->name, route('building.floor.index', $building->id, $floor->id));
 });
 
 // Room
-Breadcrumbs::register('room', function ($breadcrumbs, $room) {
-    $breadcrumbs->parent('floor', $room->$floor);
-    $breadcrumbs->push($room->name);
+Breadcrumbs::register('room', function ($breadcrumbs, $building, $floor, $room) {
+    $breadcrumbs->parent('floor', $building, $floor);
+    $breadcrumbs->push($room->name, route('building.floor.room.index', $building->id, $floor->id, $room->id));
 });
