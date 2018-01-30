@@ -4,8 +4,10 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use App\Room;
+use App\Building;
 
-class floor extends Model
+class Floor extends Model
 {
     use SoftDeletes;
 
@@ -15,4 +17,21 @@ class floor extends Model
      * @var array
      */
     protected $dates = ['deleted_at'];
+
+    /**
+     * Get the rooms for the floor.
+     */
+    public function rooms()
+    {
+        return $this->hasMany('App\Room');
+    }
+
+    /**
+     * Get the rooms for the floor.
+     */
+    public function building()
+    {
+        return $this->belongsToOne('App\Building');
+    }
+
 }
