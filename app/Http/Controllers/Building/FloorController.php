@@ -16,28 +16,34 @@ class FloorController extends Controller
      */
     public function index(Building $building)
     {
+        dd($building->floors()->all());
         return view('building.floor.index', ['floors' => $building->floors(), 'building' => $building]);
     }
 
     /**
      * Show the form for creating a new resource.
      *
+     * @param  \App\Building $building          
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create($building)
     {
-        //
+        return view('building.floor.create', ['building' => $building]);
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \Illuminate\Http\Request $request
+     * @param  \App\Building $building
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request, Building $building)
     {
-        //
+        $floor = new Floor();
+        $floor->name = $request->get('name');
+        $building->floors()->save($floor);
+        return redirect()->route('building.floor.index', $building);
     }
 
     /**
