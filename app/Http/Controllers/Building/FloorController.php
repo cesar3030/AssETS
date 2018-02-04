@@ -16,7 +16,6 @@ class FloorController extends Controller
      */
     public function index(Building $building)
     {
-        dd($building->floors()->all());
         return view('building.floor.index', ['floors' => $building->floors(), 'building' => $building]);
     }
 
