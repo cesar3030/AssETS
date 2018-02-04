@@ -16,7 +16,7 @@ class FloorController extends Controller
      */
     public function index(Building $building)
     {
-        return view('building.floor.index', ['floors' => $building->floors(), 'building' => $building]);
+        return view('building.floor.index', ['floors' => $building->floors, 'building' => $building]);
     }
 
     /**
@@ -60,33 +60,39 @@ class FloorController extends Controller
      * Show the form for editing the specified resource.
      *
      * @param  \App\Floor  $floor
+     * @param  \App\Building  $building
      * @return \Illuminate\Http\Response
      */
-    public function edit(Floor $floor)
+    public function edit(Building $building, Floor $floor)
     {
-        //
+        return view('building.floor.edit', ['building' => $building, 'floor' => $floor]);
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Building  $building
      * @param  \App\Floor  $floor
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Floor $floor)
+    public function update(Request $request, Building $building, Floor $floor)
     {
-        //
+        $floor->name = $request->get('name');
+        $floor->save();
+        return redirect()->route('building.floor.index', $building);
     }
 
     /**
      * Remove the specified resource from storage.
      *
+     * @param  \App\Building  $building
      * @param  \App\Floor  $floor
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Floor $floor)
+    public function destroy(Building $building, Floor $floor)
     {
-        //
+        $floor->delete();
+        return redirect()->route('building.floor.index', $building);
     }
 }

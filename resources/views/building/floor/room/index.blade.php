@@ -8,10 +8,10 @@
                 <div class="panel-heading">
                     <div class="row">
                         <div class="col-md-8">
-                        Étages
+                        Salles
                         </div>
                         <div class="col-md-offset-3 col-md-1">
-                            <a class="btn btn-primary" href="{{ route('building.floor.create', $building) }}"><span class="glyphicon glyphicon-plus"></span></a>
+                            <a class="btn btn-primary" href="{{ route('building.floor.room.create', [$building, $floor, $room]) }}"><span class="glyphicon glyphicon-plus"></span></a>
                         </div>
                     </div>
                 </div>
@@ -24,15 +24,15 @@
                         </tr>
                         </thead>
                         <tbody>
-                        @foreach ($floors as $floor)
+                        @foreach ($rooms as $room)
                         <tr>
-                            <td>{{ $floor->name }}</td>
+                            <td>{{ $room->name }}</td>
                             <td>
-                                {!! Form::open(['url' => '/building/'.$building->id.'/floor/'.$floor->id, 'method' => 'delete']) !!}
+                                {!! Form::open(['url' => '/building/'.$building->id.'/floor/'.$floor->id.'/room/'.$room->id, 'method' => 'delete']) !!}
                                 {!! Form::submit('Supprimer', ['class' => 'btn btn-danger pull-right']) !!}
                                 {!! Form::close() !!}
-                                <a href="{{ route('building.floor.edit', [$building, $floor]) }}" class="btn btn-primary">Modifier</a>
-                                <a href="{{ route('building.floor.room.index', [$building, $floor]) }}" class="btn btn-success">Salles</a>
+                                <a href="{{ route('building.floor.room.edit', [$building, $floor, $room]) }}" class="btn btn-primary">Modifier</a>
+                                <a href="{{ route('building.floor.room.item.index', [$building, $floor, $room]) }}" class="btn btn-success">Itèmes</a>
                             </td>
                         </tr>
                         @endforeach

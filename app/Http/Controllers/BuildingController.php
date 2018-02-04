@@ -73,9 +73,9 @@ class BuildingController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Building $building)
-    {   $building->name = $request->get('name');
+    {   
+        $building->name = $request->get('name');
         $building->address = $request->get('address');
-        $building->save();
         $building->save();
         return redirect()->route('building.index');
     }

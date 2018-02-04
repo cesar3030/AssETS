@@ -8,10 +8,10 @@
                 <div class="panel-heading">
                     <div class="row">
                         <div class="col-md-8">
-                        Étages
+                        Salles
                         </div>
                         <div class="col-md-offset-3 col-md-1">
-                            <a class="btn btn-primary" href="{{ route('building.floor.create', $building) }}"><span class="glyphicon glyphicon-plus"></span></a>
+                            <a class="btn btn-primary" href="{{ route('building.floor.room.item.create', $building, $floor, $room) }}"><span class="glyphicon glyphicon-plus"></span></a>
                         </div>
                     </div>
                 </div>
@@ -20,19 +20,24 @@
                         <thead>
                         <tr>
                             <th>Nom</th>
+                            <th>Catégorie</th>
+                            <th>Prix</th>
+                            <th>Quantité</th>
                             <th>Opérations</th>
                         </tr>
                         </thead>
                         <tbody>
-                        @foreach ($floors as $floor)
+                        @foreach ($items as $item)
                         <tr>
-                            <td>{{ $floor->name }}</td>
+                            <td>{{ $item->equipment()->name }}</td>
+                            <td>{{ $item->equipment()->categroy }}</td>
+                            <td>{{ $item->equipment()->price }}</td>
+                            <td>{{ $item->quantity }}</td>
                             <td>
-                                {!! Form::open(['url' => '/building/'.$building->id.'/floor/'.$floor->id, 'method' => 'delete']) !!}
+                                {!! Form::open(['url' => '/building/'.$building->id.'/floor/'.$floor->id.'/room/'.$room->id.'/item/'.$item->id, 'method' => 'delete']) !!}
                                 {!! Form::submit('Supprimer', ['class' => 'btn btn-danger pull-right']) !!}
                                 {!! Form::close() !!}
-                                <a href="{{ route('building.floor.edit', [$building, $floor]) }}" class="btn btn-primary">Modifier</a>
-                                <a href="{{ route('building.floor.room.index', [$building, $floor]) }}" class="btn btn-success">Salles</a>
+                                <a href="{{ route('building.floor.room.item.edit', $building, $floor, $room, $item) }}" class="btn btn-primary">Modifier</a>
                             </td>
                         </tr>
                         @endforeach
