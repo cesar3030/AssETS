@@ -34,7 +34,7 @@
                                 {!! Form::submit('Supprimer', ['class' => 'btn btn-danger pull-right']) !!}
                                 {!! Form::close() !!}
                                 <a href="{{ route('building.edit', $building) }}" class="btn btn-primary">Modifier</a>
-                                <a href="{{ route('building.show', $building) }}" class="btn btn-success">Consulter</a>
+                                <a href="{{ route('building.floor.index', $building) }}" class="btn btn-success">Étages</a>
                             </td>
                         </tr>
                         @endforeach
