@@ -12,11 +12,9 @@
 
 			<!-- Text input-->
 			<div class="form-group">
-	  			{!! Form::label('name', 'Nom', ['class' => 'col-md-4 control-label']) !!} 
-		  		<div class="col-md-4">
-			 	{!! Form::text('name', null, ['class' => 'form-control input-md']) !!}
-			  	</div>
+	  			{!! Form::select('Equipements', $equipments ) !!}
 			</div>
+
 			<div class="form-group">
 	  			{!! Form::label('quantity', 'Quantité', ['class' => 'col-md-4 control-label']) !!} 
 		  		<div class="col-md-4">

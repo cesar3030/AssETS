@@ -15,4 +15,6 @@ class Equipment extends Model
      * @var array
      */
     protected $dates = ['deleted_at'];
+
+    public $table = 'equipments';
 }

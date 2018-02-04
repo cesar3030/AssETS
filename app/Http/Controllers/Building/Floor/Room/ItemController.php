@@ -19,12 +19,11 @@ class ItemController extends Controller
      */
     public function index(Building $building, Floor $floor, Room $room)
     {
-        return view('building.floor.room.item', [
+        return view('building.floor.room.item.index', [
             'building' => $building,
             'floor' => $floor,
             'room' => $room,
-            'items' => $room->items,
-            'equipments' => Equipment::all()
+            'items' => $room->items
         ]);
     }
 
@@ -38,10 +37,11 @@ class ItemController extends Controller
      */
     public function create(Building $building, Floor $floor, Room $room)
     {
-        return view('building.floor.room.create', [
+        return view('building.floor.room.item.create', [
             'building' => $building,
             'floor' => $floor,
-            'room' => $room
+            'room' => $room,
+            'equipments' => Equipment::all()
         ]);
     }
 

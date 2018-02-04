@@ -37,7 +37,8 @@ class RoomController extends Controller
     {
         return view('building.floor.room.create', [
             'building' => $building,
-            'floor' => $floor
+            'floor' => $floor,
+
         ]);
     }
 

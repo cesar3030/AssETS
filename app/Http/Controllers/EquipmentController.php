@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Equipment;
 
 class EquipmentController extends Controller
 {
@@ -40,10 +41,10 @@ class EquipmentController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param Equipment $equipment
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Equipment $equipment)
     {
         //
     }
@@ -51,10 +52,10 @@ class EquipmentController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param Equipment $equipment
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Equipment $equipment)
     {
         //
     }
@@ -63,10 +64,10 @@ class EquipmentController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param Equipment $equipment
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Equipment $equipment)
     {
         //
     }
@@ -74,7 +75,7 @@ class EquipmentController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param Equipment $equipment
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)

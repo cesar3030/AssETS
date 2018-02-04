@@ -11,7 +11,7 @@
                         Salles
                         </div>
                         <div class="col-md-offset-3 col-md-1">
-                            <a class="btn btn-primary" href="{{ route('building.floor.room.item.create', $building, $floor, $room) }}"><span class="glyphicon glyphicon-plus"></span></a>
+                            <a class="btn btn-primary" href="{{ route('building.floor.room.item.create', [$building, $floor, $room]) }}"><span class="glyphicon glyphicon-plus"></span></a>
                         </div>
                     </div>
                 </div>
