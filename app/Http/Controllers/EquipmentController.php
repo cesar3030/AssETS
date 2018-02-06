@@ -8,13 +8,28 @@ use App\Equipment;
 class EquipmentController extends Controller
 {
     /**
+    * Method to return the equipment categories
+    * @return Array of categroies
+    */
+    private function getCategories(){
+        return [
+            'Serveur' => 'Serveur', 
+            'Routeur' => 'Routeur', 
+            'Cable' =>  'Cable', 
+            'Ecran' => 'Ecran', 
+            'Processeur' => 'Processeur',
+            'Clavier' => 'Clavier'
+        ];
+    }
+
+    /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
     public function index()
     {
-        //
+        return view('equipment.index', ['equipments' => Equipment::all()]);
     }
 
     /**
@@ -24,7 +39,7 @@ class EquipmentController extends Controller
      */
     public function create()
     {
-        //
+        return view('equipment.create', ['categories' => $this->getCategories()]);
     }
 
     /**
@@ -35,7 +50,13 @@ class EquipmentController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $equipment = new Equipment();
+        $equipment->name = $request->get('name');
+        $equipment->category = $request->get('category');
+        $equipment->company = $request->get('company');
+        $equipment->price = $request->get('price');
+        $equipment->save();
+        return redirect()->route('equipment.index');
     }
 
     /**
@@ -57,7 +78,7 @@ class EquipmentController extends Controller
      */
     public function edit(Equipment $equipment)
     {
-        //
+        return view('equipment.edit', [ 'equipment' => $equipment, 'categories' => $this->getCategories()]);
     }
 
     /**
@@ -69,7 +90,12 @@ class EquipmentController extends Controller
      */
     public function update(Request $request, Equipment $equipment)
     {
-        //
+        $equipment->name = $request->get('name');
+        $equipment->category = $request->get('category');
+        $equipment->company = $request->get('company');
+        $equipment->price = $request->get('price');
+        $equipment->save();
+        return redirect()->route('equipment.index');
     }
 
     /**
@@ -78,8 +104,9 @@ class EquipmentController extends Controller
      * @param Equipment $equipment
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Equipment $equipment)
     {
-        //
+        $equipment->delete();
+        return redirect()->route('equipment.index');
     }
 }

@@ -10,17 +10,17 @@
 			<!-- Form Name -->
 			<legend>Modification d'un item</legend>
 
-			<!-- Text input-->
 			<div class="form-group">
-	  			{!! Form::label('name', 'Nom', ['class' => 'col-md-4 control-label']) !!} 
+				{!! Form::label('equipment', 'Équipment', ['class' => 'col-md-4 control-label']) !!} 
 		  		<div class="col-md-4">
-			 	{!! Form::text('name', null, ['class' => 'form-control input-md']) !!}
-			  	</div>
+	  				{!! Form::select('equipment_id', $equipments) !!}
+  				</div>
 			</div>
+			
 			<div class="form-group">
 	  			{!! Form::label('quantity', 'Quantité', ['class' => 'col-md-4 control-label']) !!} 
 		  		<div class="col-md-4">
-			 	{!! Form::text('quantity', null, ['class' => 'form-control input-md']) !!}
+			 	{!! Form::number('quantity', null, ['class' => 'form-control input-md', 'required' => 'required']) !!}
 			  	</div>
 			</div>
 			{!! Form::submit('Modifier', ['class' => 'btn btn-info']) !!}

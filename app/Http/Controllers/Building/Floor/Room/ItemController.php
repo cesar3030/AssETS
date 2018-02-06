@@ -18,7 +18,7 @@ class ItemController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index(Building $building, Floor $floor, Room $room)
-    {
+    {   
         return view('building.floor.room.item.index', [
             'building' => $building,
             'floor' => $floor,
@@ -41,7 +41,7 @@ class ItemController extends Controller
             'building' => $building,
             'floor' => $floor,
             'room' => $room,
-            'equipments' => Equipment::all()
+            'equipments' => Equipment::all()->pluck('name', 'id')
         ]);
     }
 
@@ -58,6 +58,7 @@ class ItemController extends Controller
     {
         $item = new Item();
         $item->quantity = $request->get('quantity');
+        $item->equipment_id = $request->get('equipment_id');
         $room->items()->save($item);
         return redirect()->route('building.floor.room.item.index', [$building, $floor, $room]);
 
@@ -88,11 +89,12 @@ class ItemController extends Controller
      */
     public function edit(Building $building, Floor $floor, Room $room, Item $item)
     {
-        return view('building.floor.room.edit', [
+        return view('building.floor.room.item.edit', [
             'building' => $building,
             'floor' => $floor,
             'room' => $room,
-            'item' => $item
+            'item' => $item,
+            'equipments' => Equipment::all()->pluck('name', 'id')
         ]);
     }
 
@@ -109,6 +111,7 @@ class ItemController extends Controller
     public function update(Request $request, Building $building, Floor $floor, Room $room, Item $item)
     {
         $item->quantity = $request->get('quantity');
+        $item->equipment_id = $request->get('equipment_id');
         $item->save();
         return redirect()->route('building.floor.room.item.index', [$building, $floor, $room]);
     }

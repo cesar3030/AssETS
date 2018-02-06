@@ -20,6 +20,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('building', 'BuildingController');
 Route::resource('user', 'UserController');
+Route::resource('equipment', 'EquipmentController');
 Route::resource('building.floor', 'Building\FloorController');
 Route::resource('building.floor.room', 'Building\Floor\RoomController');
 Route::resource('building.floor.room.item', 'Building\Floor\Room\ItemController');

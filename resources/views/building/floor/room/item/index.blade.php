@@ -29,15 +29,16 @@
                         <tbody>
                         @foreach ($items as $item)
                         <tr>
-                            <td>{{ $item->equipment()->name }}</td>
-                            <td>{{ $item->equipment()->categroy }}</td>
-                            <td>{{ $item->equipment()->price }}</td>
+                          
+                            <td>{{ $item->equipment->name }}</td>
+                            <td>{{ $item->equipment->category }}</td>
+                            <td>{{ $item->equipment->price }}</td>
                             <td>{{ $item->quantity }}</td>
                             <td>
                                 {!! Form::open(['url' => '/building/'.$building->id.'/floor/'.$floor->id.'/room/'.$room->id.'/item/'.$item->id, 'method' => 'delete']) !!}
                                 {!! Form::submit('Supprimer', ['class' => 'btn btn-danger pull-right']) !!}
                                 {!! Form::close() !!}
-                                <a href="{{ route('building.floor.room.item.edit', $building, $floor, $room, $item) }}" class="btn btn-primary">Modifier</a>
+                                <a href="{{ route('building.floor.room.item.edit', [$building, $floor, $room, $item]) }}" class="btn btn-primary">Modifier</a>
                             </td>
                         </tr>
                         @endforeach

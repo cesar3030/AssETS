@@ -23,7 +23,7 @@ class Item extends Model
      */
     public function equipment()
     {
-        return $this->hasOne('App\Equipment');
+        return $this->belongsTo('App\Equipment');
     }
 
     /**
@@ -31,7 +31,7 @@ class Item extends Model
      */
     public function room()
     {
-        return $this->hasOne('App\Room');
+        return $this->belongsToOne('App\Room');
     }
 
 

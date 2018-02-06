@@ -14,14 +14,14 @@
 				<div class="form-group">
 		  			{!! Form::label('name', 'Nom', ['class' => 'col-md-4 control-label']) !!} 
 			  		<div class="col-md-4">
-				 	{!! Form::text('name', null, ['class' => 'form-control input-md']) !!}
+				 	{!! Form::text('name', null, ['class' => 'form-control input-md', 'required' => 'required']) !!}
 				  	</div>
 				</div>
 				<!-- Text input-->
 				<div class="form-group">
 		  			{!! Form::label('address', 'Adresse', ['class' => 'col-md-4 control-label']) !!} 
 			  		<div class="col-md-4">
-				 	{!! Form::text('address', null, ['class' => 'form-control input-md']) !!}
+				 	{!! Form::text('address', null, ['class' => 'form-control input-md', 'required' => 'required']) !!}
 				  	</div>
 				</div>
 				{!! Form::submit('Submit', ['class' => 'btn btn-info']) !!}

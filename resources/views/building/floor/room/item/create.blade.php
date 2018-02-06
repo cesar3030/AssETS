@@ -10,15 +10,17 @@
 			<!-- Form Name -->
 			<legend>Ajouter un nouveau item</legend>
 
-			<!-- Text input-->
 			<div class="form-group">
-	  			{!! Form::select('Equipements', $equipments ) !!}
+				{!! Form::label('equipment', 'Équipment', ['class' => 'col-md-4 control-label']) !!} 
+		  		<div class="col-md-4">
+	  				{!! Form::select('equipment_id', $equipments) !!}
+  				</div>
 			</div>
 
 			<div class="form-group">
 	  			{!! Form::label('quantity', 'Quantité', ['class' => 'col-md-4 control-label']) !!} 
 		  		<div class="col-md-4">
-			 	{!! Form::text('quantity', null, ['class' => 'form-control input-md']) !!}
+			 	{!! Form::number('quantity', null, ['class' => 'form-control input-md', 'required' => 'required']) !!}
 			  	</div>
 			</div>
 			{!! Form::submit('Ajouter', ['class' => 'btn btn-info']) !!}
