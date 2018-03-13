@@ -25,3 +25,7 @@ Route::resource('building.floor', 'Building\FloorController');
 Route::resource('building.floor.room', 'Building\Floor\RoomController');
 Route::resource('building.floor.room.item', 'Building\Floor\Room\ItemController');
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
