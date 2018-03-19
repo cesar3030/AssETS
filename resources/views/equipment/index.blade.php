@@ -1,6 +1,17 @@
 @extends('layouts.app')
 
 @section('content')
+<script>
+  function confirmDelete() {
+  var result = confirm('Confirmer la suppression de cet élément?');
+
+  if (result) {
+          return true;
+      } else {
+          return false;
+      }
+  }
+</script>
 <div class="container">
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
@@ -34,7 +45,7 @@
                             <td>{{ $equipment->price }}</td>
                             <td>{{ $equipment->category }}</td>
                             <td>
-                                {!! Form::open(['url' => 'equipment/'.$equipment->id, 'method' => 'delete']) !!}
+                                {!! Form::open(['url' => 'equipment/'.$equipment->id,'onsubmit' => 'return confirmDelete()', 'method' => 'delete']) !!}
                                 {!! Form::submit('Supprimer', ['class' => 'btn btn-danger pull-right']) !!}
                                 {!! Form::close() !!}
                                 <a href="{{ route('equipment.edit', $equipment) }}" class="btn btn-primary">Modifier</a>

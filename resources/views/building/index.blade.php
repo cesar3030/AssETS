@@ -1,6 +1,17 @@
 @extends('layouts.app')
 
 @section('content')
+<script>
+  function confirmDelete() {
+  var result = confirm('Confirmer la suppression de cet élément?');
+
+  if (result) {
+          return true;
+      } else {
+          return false;
+      }
+  }
+</script>
 <div class="container">
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
@@ -48,7 +59,7 @@
                                             </ul>
                                         </li>
                                 </ul>
-                                {!! Form::open(['url' => '/building/'.$building->id,'onsubmit' => 'return ConfirmDelete()', 'method' => 'delete']) !!}
+                                {!! Form::open(['url' => '/building/'.$building->id,'onsubmit' => 'return confirmDelete()', 'method' => 'delete']) !!}
                                 {!! Form::submit('Supprimer', ['class' => 'btn btn-danger pull-right']) !!}
                                 {!! Form::close() !!}
                             </td>
