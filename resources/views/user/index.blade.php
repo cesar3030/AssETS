@@ -21,9 +21,6 @@
                         <div class="col-md-8">
                         Utilisateurs
                         </div>
-                        <div class="col-md-offset-3 col-md-1">
-                            <a href="{{ route('building.create') }}"><span class="glyphicon glyphicon-plus"></span></a>
-                        </div>
                     </div>
                 </div>
                 <div class="panel-body">
