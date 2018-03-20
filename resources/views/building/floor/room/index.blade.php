@@ -2,10 +2,9 @@
 
 @section('content')
 <div class="container">
-    <div class="container">
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
-            {{ Breadcrumbs::render('floor_dynamic', $building, $floor) }}
+            {{ Breadcrumbs::render('room_static', $building, $floor) }}
         </div>
     </div>
     <div class="row">

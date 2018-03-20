@@ -15,7 +15,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
-            {{ Breadcrumbs::render('building_dynamic', $building) }}
+            {{ Breadcrumbs::render('floor_static', $building) }}
         </div>
     </div>
     <div class="row">
