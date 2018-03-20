@@ -1,6 +1,17 @@
 @extends('layouts.app')
 
 @section('content')
+<script>
+  function confirmDelete() {
+  var result = confirm('Confirmer la suppression de cet élément?');
+
+  if (result) {
+          return true;
+      } else {
+          return false;
+      }
+  }
+</script>
 <div class="container">
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
@@ -28,7 +39,7 @@
                         <tr>
                             <td>{{ $user->email}}</td>
                             <td>
-                                {!! Form::open(['url' => 'user'.$user->id, 'method' => 'delete']) !!}
+                                {!! Form::open(['url' => 'user'.$user->id,'onsubmit' => 'return confirmDelete()', 'method' => 'delete']) !!}
                                 {!! Form::submit('Supprimer', ['class' => 'btn btn-danger pull-right']) !!}
                                 {!! Form::close() !!}
                                 <a href="{{ route('user.edit', $user) }}" class="btn btn-primary">Modifier</a>
